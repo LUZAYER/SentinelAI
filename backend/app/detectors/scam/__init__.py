@@ -1,0 +1,1 @@
+# Scam detector package
