@@ -1,1 +1,0 @@
-# Phishing detector package
