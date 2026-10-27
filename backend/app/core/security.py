@@ -16,7 +16,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from backend.app.core.config import settings
 from backend.app.core.database import get_db
 
-# Password hashing context — bcrypt
+import bcrypt
+
+# Password hashing context — bcrypt fallback
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 # Bearer token scheme for Swagger UI integration
@@ -24,13 +26,21 @@ bearer_scheme = HTTPBearer(auto_error=False)
 
 
 def hash_password(password: str) -> str:
-    """Hash a plaintext password using bcrypt."""
-    return pwd_context.hash(password)
+    """Hash a plaintext password using native bcrypt."""
+    pwd_bytes = password.encode("utf-8")
+    salt = bcrypt.gensalt()
+    return bcrypt.hashpw(pwd_bytes, salt).decode("utf-8")
 
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """Verify a plaintext password against a bcrypt hash."""
-    return pwd_context.verify(plain_password, hashed_password)
+    try:
+        return bcrypt.checkpw(plain_password.encode("utf-8"), hashed_password.encode("utf-8"))
+    except Exception:
+        try:
+            return pwd_context.verify(plain_password, hashed_password)
+        except Exception:
+            return False
 
 
 def create_access_token(data: dict, expires_delta: timedelta | None = None) -> str:

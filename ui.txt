@@ -1,0 +1,1218 @@
+Design a complete, production-quality web application UI/UX for:
+
+# SENTINELAI
+
+### AI-Powered Multi-Modal Digital Threat Detection & Digital Authenticity Analysis Platform
+
+SentinelAI is a professional cybersecurity and digital forensics platform that allows users to analyze digital content for deepfakes, manipulated documents, phishing URLs, scam/social-engineering content, and potentially malicious files.
+
+The interface must feel like a serious enterprise cybersecurity product used by security analysts, digital forensic investigators, organizations, and researchers.
+
+DO NOT design this as a futuristic cyberpunk website.
+
+DO NOT use neon green/red hacker aesthetics, excessive gradients, glowing effects, matrix backgrounds, skulls, terminal-style decoration, or gaming UI.
+
+The visual language should be:
+
+* Modern
+* Professional
+* Minimal
+* Technical
+* Trustworthy
+* Enterprise-grade
+* Clean
+* Data-driven
+* Security-focused
+* Highly usable
+* Suitable for an academic/research project and future commercial deployment
+
+Use a refined light-first interface with optional dark mode.
+
+===============================================================================
+
+1. DESIGN SYSTEM
+   ===============================================================================
+
+Create a consistent design system across the entire application.
+
+COLOR DIRECTION:
+
+Primary:
+
+* Deep navy / dark blue
+* Professional blue
+* Neutral slate
+
+Supporting:
+
+* White
+* Very light gray
+* Slate gray
+* Subtle blue-gray surfaces
+
+Semantic colors:
+
+* Green = Low / Safe
+* Yellow/Amber = Medium / Warning
+* Orange = High
+* Red = Critical / Malicious
+
+Use semantic colors sparingly.
+
+Avoid making the entire interface colorful.
+
+TYPOGRAPHY:
+
+Use a modern professional sans-serif such as:
+
+* Inter
+* Geist
+* IBM Plex Sans
+
+Use clear hierarchy:
+
+* Large page titles
+* Medium section headings
+* Small labels
+* Highly readable body text
+* Monospace typography only for hashes, URLs, IP addresses, technical indicators, and code-like data
+
+COMPONENT STYLE:
+
+* Rounded but not excessively rounded cards
+* 8–12px border radius
+* Thin subtle borders
+* Minimal shadows
+* Strong spacing system
+* Clear information hierarchy
+* Compact but readable data tables
+* Professional icons
+* Consistent button styles
+* Accessible contrast
+
+The application should feel similar in quality to modern enterprise products such as professional security operations platforms, cloud security dashboards, and high-end SaaS products.
+
+===============================================================================
+2. APPLICATION STRUCTURE
+========================
+
+Create the following application structure:
+
+MAIN NAVIGATION:
+
+Logo:
+SENTINELAI
+
+Navigation:
+
+* Dashboard
+* New Analysis
+* Analyses
+* Reports
+* Threat Intelligence
+* Watchlist
+* Activity
+* Settings
+
+Bottom navigation area:
+
+* Help & Documentation
+* System Status
+* User Profile
+
+Include a collapsible sidebar.
+
+Desktop:
+
+* Fixed left sidebar
+* Main content area
+
+Tablet:
+
+* Compact sidebar
+
+Mobile:
+
+* Bottom navigation / hamburger navigation
+
+===============================================================================
+3. LOGIN / AUTHENTICATION
+=========================
+
+Create a professional authentication experience.
+
+Pages:
+
+* Login
+* Register
+* Forgot Password
+* Reset Password
+* Email Verification
+
+Login screen should include:
+
+SENTINELAI logo
+
+"Secure Digital Threat Analysis"
+
+Email
+Password
+Remember me
+Forgot password?
+
+[ Sign In ]
+
+Optional:
+
+Continue with organization SSO
+
+Keep the authentication page extremely clean and trustworthy.
+
+===============================================================================
+4. MAIN DASHBOARD
+=================
+
+Create a sophisticated cybersecurity analyst dashboard.
+
+Header:
+
+"Good morning, Analyst"
+
+Subtitle:
+
+"Monitor digital authenticity and security risks across your analyses."
+
+Top-right:
+
+* Notifications
+* System status
+* User profile
+
+SUMMARY CARDS:
+
+1. Total Analyses
+2. High-Risk Findings
+3. Deepfakes Detected
+4. Threats Detected
+
+Each card should show:
+
+* Main number
+* Percentage/change
+* Small trend indicator
+* Relevant icon
+
+MAIN DASHBOARD SECTIONS:
+
+A. Risk Overview
+
+Create a clean chart showing:
+
+Low
+Guarded
+Medium
+High
+Critical
+
+B. Recent Analyses
+
+Table:
+
+Analysis ID
+Input
+Type
+Risk
+Confidence
+Status
+Date
+Action
+
+Example:
+
+ANL-20491
+Video_Interview.mp4
+Deepfake
+High
+94%
+Completed
+Today
+
+ANL-20490
+invoice.pdf
+Document
+Medium
+81%
+Completed
+Today
+
+C. Detection Activity
+
+Timeline/chart showing analysis activity over time.
+
+D. Detection Distribution
+
+Visual breakdown:
+
+Deepfake
+Document
+Phishing
+Scam
+Malware
+
+E. Recent Threats
+
+Compact threat cards showing:
+
+Threat type
+Risk level
+Detection confidence
+Timestamp
+
+===============================================================================
+5. NEW ANALYSIS PAGE
+====================
+
+This is one of the most important screens.
+
+Title:
+
+"New Analysis"
+
+Subtitle:
+
+"Upload content or provide an indicator to begin security analysis."
+
+Create a large professional analysis input area.
+
+Allow users to select:
+
+[ Upload File ]
+
+[ Analyze URL ]
+
+[ Analyze Text ]
+
+[ Analyze Image ]
+
+[ Analyze Video ]
+
+[ Analyze Audio ]
+
+Use a clean drag-and-drop upload zone.
+
+Example:
+
+"Drop a file here or browse from your device"
+
+"Supported formats depend on analysis type"
+
+Show:
+
+Maximum file size
+Security scanning
+Privacy information
+
+After upload:
+
+Display file preview:
+
+Filename
+File type
+Size
+Hash
+Upload status
+
+Then:
+
+[ Start Analysis ]
+
+===============================================================================
+6. ANALYSIS TYPE SELECTOR
+=========================
+
+Create a clear analysis-type interface.
+
+Cards:
+
+---
+
+DEEPFAKE DETECTION
+
+Analyze images, videos and audio for
+potential AI-generated or manipulated content.
+----------------------------------------------
+
+---
+
+DOCUMENT FORENSICS
+
+Analyze documents for potential manipulation,
+structural inconsistencies and suspicious changes.
+--------------------------------------------------
+
+---
+
+PHISHING ANALYSIS
+
+Analyze URLs for suspicious domains,
+redirects and phishing indicators.
+----------------------------------
+
+---
+
+SCAM ANALYSIS
+
+Analyze messages for scam and
+social-engineering characteristics.
+-----------------------------------
+
+---
+
+MALWARE ANALYSIS
+
+Perform static analysis of potentially
+malicious files.
+----------------
+
+Each card should have:
+
+Icon
+Title
+Short description
+Supported input types
+
+===============================================================================
+7. ANALYSIS PROCESSING SCREEN
+=============================
+
+Create a professional real-time analysis progress screen.
+
+Title:
+
+"Analyzing Content"
+
+Show analysis ID.
+
+Display a vertical processing pipeline:
+
+✓ File received
+
+✓ Preprocessing
+
+✓ Feature extraction
+
+● Specialized detection
+
+○ Evidence aggregation
+
+○ Risk assessment
+
+○ LLM explanation
+
+○ Report generation
+
+Each stage should show:
+
+Status
+Progress
+Processing time
+
+Include a small technical details panel.
+
+Example:
+
+Detector:
+Deepfake Vision Model
+
+Model:
+SentinelAI-DF-v1
+
+Processing:
+GPU
+
+Status:
+Analyzing frames 128 / 240
+
+Do not make this look like a hacker terminal.
+
+===============================================================================
+8. ANALYSIS RESULT PAGE
+=======================
+
+This should be the primary showcase screen.
+
+Header:
+
+"Analysis Result"
+
+Analysis ID:
+ANL-20491
+
+Timestamp:
+08 September 2026, 09:42
+
+Top-level result card:
+
+RISK LEVEL
+
+HIGH
+
+Risk Score:
+87 / 100
+
+Confidence:
+94%
+
+Status:
+Potentially Manipulated
+
+Create a large but restrained risk visualization.
+
+Possible design:
+
+Circular score indicator or horizontal risk meter.
+
+Below it:
+
+"Why this result?"
+
+Show a concise AI-generated explanation.
+
+Example:
+
+"The analyzed video contains multiple indicators consistent with
+AI-generated facial manipulation. Temporal inconsistencies were detected
+across several frames, accompanied by abnormal facial texture patterns."
+
+Include:
+
+[ View Full Evidence ]
+
+[ Generate Report ]
+
+[ Export PDF ]
+
+===============================================================================
+9. EVIDENCE PANEL
+=================
+
+Create an evidence section with detailed findings.
+
+Title:
+
+"Detection Evidence"
+
+Each evidence item should contain:
+
+Severity
+Indicator
+Confidence
+Description
+Source
+
+Example:
+
+HIGH
+Temporal Facial Inconsistency
+Confidence: 92%
+
+"Facial landmarks show abnormal temporal transitions across
+multiple consecutive frames."
+
+Another:
+
+MEDIUM
+Compression Anomaly
+Confidence: 76%
+
+"Localized compression characteristics differ significantly
+from surrounding regions."
+
+Allow evidence items to expand/collapse.
+
+===============================================================================
+10. DETECTOR BREAKDOWN
+======================
+
+Create a detector breakdown section.
+
+Example:
+
+Deepfake Detector
+██████████████████ 92%
+
+Metadata Analysis
+██████████████ 74%
+
+Frame Consistency
+████████████████ 84%
+
+Audio Analysis
+███████████ 61%
+
+Each detector should display:
+
+Detector name
+Score
+Confidence
+Status
+Evidence count
+
+===============================================================================
+11. AI EXPLANATION
+==================
+
+Create a dedicated "AI Analysis" section.
+
+Header:
+
+"AI-Powered Analysis"
+
+Badge:
+
+Ollama · Qwen3
+
+Display:
+
+Summary
+Key Findings
+Risk Explanation
+Recommended Actions
+Limitations
+
+Important UI distinction:
+
+Clearly show that the LLM is explaining detector evidence rather than
+independently determining the security verdict.
+
+Example label:
+
+"Evidence-grounded explanation"
+
+Include subtle information:
+
+"Generated from structured detector findings."
+
+===============================================================================
+12. DOCUMENT FORENSICS INTERFACE
+================================
+
+Create a specialized document analysis result page.
+
+Show:
+
+Document preview on the left.
+
+Analysis panel on the right.
+
+Information:
+
+Document Type
+File Hash
+Creation Date
+Modification Date
+Author
+Software
+Page Count
+
+Create highlighted suspicious regions in the document preview.
+
+Example labels:
+
+"Font inconsistency"
+
+"Possible image replacement"
+
+"Metadata anomaly"
+
+"Layout inconsistency"
+
+Below:
+
+Document Integrity Score
+
+Risk Assessment
+
+Evidence
+
+AI Explanation
+
+===============================================================================
+13. PHISHING ANALYSIS INTERFACE
+===============================
+
+Create a specialized URL analysis page.
+
+Top:
+
+URL input
+
+Example:
+
+https://example-login-security.com/account
+
+Result:
+
+HIGH RISK
+
+Risk Score:
+91 / 100
+
+Show domain analysis:
+
+Domain
+Age
+Registrar
+SSL
+Redirects
+IP
+Country
+Reputation
+
+Create a clean URL structure visualization:
+
+User Input
+↓
+Domain
+↓
+Redirect
+↓
+Landing Page
+
+Add a "Threat Indicators" section.
+
+Example:
+
+Suspicious domain similarity
+Credential harvesting indicator
+Multiple redirects
+
+===============================================================================
+14. SCAM / SOCIAL ENGINEERING INTERFACE
+=======================================
+
+Create a text analysis interface.
+
+Left:
+
+Message content
+
+Right:
+
+Analysis result
+
+Show detected characteristics:
+
+* Urgency
+* Impersonation
+* Financial request
+* Suspicious link
+* Psychological manipulation
+
+Create a risk score and confidence indicator.
+
+Highlight suspicious sentences directly within the message.
+
+===============================================================================
+15. MALWARE ANALYSIS INTERFACE
+==============================
+
+Create a static malware-analysis dashboard.
+
+Show:
+
+File Name
+File Type
+SHA-256
+MD5
+File Size
+Entropy
+Architecture
+
+Sections:
+
+* File Metadata
+* Strings
+* Imports
+* Sections
+* Entropy
+* Indicators
+* Suspicious Characteristics
+
+Use technical typography for hashes and indicators.
+
+Example:
+
+SHA-256
+
+`8f31c4...9a71d2`
+
+Risk:
+
+CRITICAL
+
+Important warning:
+
+"Static analysis only. This file has not been executed."
+
+===============================================================================
+16. ANALYSIS HISTORY
+====================
+
+Create an "Analyses" page.
+
+Use a professional data table.
+
+Columns:
+
+ID
+Filename / Input
+Type
+Risk
+Confidence
+Status
+Created
+Actions
+
+Filters:
+
+* Analysis Type
+* Risk Level
+* Date
+* Status
+
+Search bar:
+
+"Search analyses..."
+
+Actions:
+
+View
+Download Report
+Delete
+
+Include pagination.
+
+===============================================================================
+17. REPORTS PAGE
+================
+
+Create a report management interface.
+
+Cards/table:
+
+Report Name
+Analysis ID
+Type
+Risk
+Created
+Format
+
+Actions:
+
+View
+Download PDF
+Download JSON
+Share
+
+Include:
+
+"Generate Report"
+
+button.
+
+===============================================================================
+18. REPORT VIEW
+===============
+
+Design a professional security report viewer.
+
+Header:
+
+SENTINELAI SECURITY ANALYSIS REPORT
+
+Analysis ID
+Date
+Analyst
+Classification
+
+Executive Summary
+
+Risk Assessment
+
+Detection Results
+
+Evidence
+
+Technical Findings
+
+AI Explanation
+
+Recommended Actions
+
+Limitations
+
+Use a clean document-style layout suitable for exporting to PDF.
+
+===============================================================================
+19. THREAT INTELLIGENCE
+=======================
+
+Create a threat intelligence dashboard.
+
+Sections:
+
+* Recent Indicators
+* Suspicious Domains
+* File Hashes
+* IP Indicators
+* Threat Categories
+
+Table:
+
+Indicator
+Type
+Severity
+Source
+First Seen
+Last Seen
+Status
+
+Provide filtering and search.
+
+===============================================================================
+20. WATCHLIST
+=============
+
+Create a watchlist system where users can monitor:
+
+* URLs
+* Domains
+* File hashes
+* Analysis IDs
+
+Show:
+
+Indicator
+Risk
+Last Checked
+Status
+Actions
+
+===============================================================================
+21. ACTIVITY / AUDIT LOG
+========================
+
+Create a security audit-log interface.
+
+Columns:
+
+Timestamp
+User
+Action
+Resource
+IP
+Status
+
+Examples:
+
+Analysis Created
+Report Generated
+File Uploaded
+User Login
+Settings Updated
+
+===============================================================================
+22. SETTINGS
+============
+
+Create a complete settings interface.
+
+Sections:
+
+Profile
+Security
+Notifications
+Appearance
+Analysis Preferences
+LLM Configuration
+Storage
+API
+Organization
+
+LLM Configuration page:
+
+Provider:
+Ollama
+
+Model:
+
+[ Llama 3.1 ]
+
+[ Qwen3 ]
+
+Ollama Endpoint
+
+Connection Status:
+
+● Connected
+
+Include:
+
+"Test Connection"
+
+button.
+
+===============================================================================
+23. SYSTEM STATUS
+=================
+
+Create a system-health page.
+
+Services:
+
+Frontend
+Backend API
+PostgreSQL
+Redis
+Ollama
+Analysis Worker
+Object Storage
+
+Show:
+
+Operational
+Degraded
+Offline
+
+Include response time and last checked time.
+
+===============================================================================
+24. EMPTY / ERROR / LOADING STATES
+==================================
+
+Design all necessary states.
+
+Include:
+
+* Empty analysis history
+* No reports
+* No threats
+* Upload error
+* Unsupported file
+* File too large
+* Analysis failed
+* Service unavailable
+* LLM unavailable
+* Database unavailable
+* Permission denied
+* 404
+* 500
+
+Use helpful messages and clear recovery actions.
+
+===============================================================================
+25. NOTIFICATIONS
+=================
+
+Create notification components for:
+
+Success
+Warning
+Error
+Information
+
+Examples:
+
+"Analysis completed successfully."
+
+"High-risk content detected."
+
+"Ollama connection unavailable."
+
+"Report generated successfully."
+
+===============================================================================
+26. RESPONSIVE DESIGN
+=====================
+
+Design all screens responsively.
+
+Desktop:
+1440px primary design target.
+
+Tablet:
+1024px.
+
+Mobile:
+390px / 430px.
+
+On mobile:
+
+* Collapse sidebar
+* Use bottom navigation where appropriate
+* Stack cards vertically
+* Convert tables into responsive cards
+* Keep analysis results readable
+* Maintain clear risk indicators
+* Preserve primary actions
+
+===============================================================================
+27. ACCESSIBILITY
+=================
+
+Follow professional accessibility practices.
+
+Include:
+
+* Strong color contrast
+* Keyboard navigation
+* Visible focus states
+* Clear labels
+* Accessible buttons
+* Meaningful error messages
+* Do not rely only on color to communicate risk
+
+===============================================================================
+28. MICRO-INTERACTIONS
+======================
+
+Use subtle animations only where they improve usability.
+
+Examples:
+
+* Upload progress
+* Analysis progress
+* Card hover
+* Button loading
+* Status transitions
+* Expand/collapse evidence
+* Toast notifications
+
+Avoid excessive animation.
+
+===============================================================================
+29. IMPORTANT VISUAL DIRECTION
+==============================
+
+The application should visually communicate:
+
+"Professional AI security analysis platform"
+
+NOT:
+
+"Hacker dashboard"
+
+NOT:
+
+"Cyberpunk interface"
+
+NOT:
+
+"Gaming interface"
+
+Use:
+
+* Clean whitespace
+* Structured grids
+* Strong typography
+* Professional charts
+* Subtle borders
+* Restrained color
+* Clear data hierarchy
+* High-quality icons
+* Consistent spacing
+* Enterprise SaaS patterns
+
+The UI should look credible enough for:
+
+* Security operations teams
+* Digital forensic analysts
+* Researchers
+* Universities
+* Enterprises
+* Government organizations
+* Cybersecurity professionals
+
+===============================================================================
+30. FIGMA DELIVERABLE
+=====================
+
+Generate a complete Figma design system and application UI.
+
+Create:
+
+1. Design System
+2. Color Tokens
+3. Typography
+4. Buttons
+5. Inputs
+6. Cards
+7. Tables
+8. Badges
+9. Alerts
+10. Charts
+11. Navigation
+12. Modals
+13. Upload Components
+14. Risk Indicators
+15. Analysis Components
+16. Report Components
+
+Then create complete screens for:
+
+* Login
+* Register
+* Dashboard
+* New Analysis
+* Upload
+* Analysis Processing
+* Analysis Result
+* Deepfake Analysis
+* Document Forensics
+* Phishing Analysis
+* Scam Analysis
+* Malware Analysis
+* Analysis History
+* Reports
+* Report Viewer
+* Threat Intelligence
+* Watchlist
+* Activity Logs
+* Settings
+* System Status
+* Notifications
+* Empty States
+* Error States
+
+Use realistic sample data throughout the designs.
+
+Ensure that all screens share the same design system and component language.
+
+The final result should look like a polished, modern, production-ready
+cybersecurity SaaS product rather than a generic AI dashboard.
+
+===============================================================================
+FINAL PRODUCT IDENTITY
+======================
+
+Product:
+
+SENTINELAI
+
+Tagline:
+
+"Detect. Analyze. Explain. Protect."
+
+Core identity:
+
+AI + Cybersecurity + Digital Forensics + Digital Authenticity
+
+Primary differentiator:
+
+A unified platform that combines multiple digital threat and authenticity
+analysis capabilities with evidence aggregation and locally hosted AI
+explanation.
+
+The final Figma design should communicate trust, technical sophistication,
+clarity, and enterprise-grade security.

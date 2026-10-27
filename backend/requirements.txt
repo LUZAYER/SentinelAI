@@ -6,6 +6,7 @@ python-multipart==0.0.20
 # Database
 sqlalchemy[asyncio]==2.0.41
 asyncpg==0.30.0
+psycopg2-binary==2.9.10
 alembic==1.16.2
 
 # Validation
@@ -41,6 +42,9 @@ soundfile==0.13.1
 
 # OCR
 pytesseract==0.3.13
+
+# NLP
+nltk==3.9.1
 
 # PE Analysis (Malware)
 pefile==2024.8.26

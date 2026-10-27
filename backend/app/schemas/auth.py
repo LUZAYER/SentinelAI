@@ -29,9 +29,23 @@ class UserCreate(BaseModel):
 
 
 class UserLogin(BaseModel):
-    """Login request."""
-    email: EmailStr
+    """Login request (accepts email or username)."""
+    email: str | None = None
+    username: str | None = None
     password: str
+
+
+class ForgotPasswordRequest(BaseModel):
+    email: EmailStr
+
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str = Field(..., min_length=8, max_length=128)
+
+
+class VerifyEmailRequest(BaseModel):
+    token: str
 
 
 class UserResponse(BaseModel):
